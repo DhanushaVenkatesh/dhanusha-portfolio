@@ -3,78 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhanusha Venkatesh | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Dhanusha | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
+        <div class="logo">Dhanusha</div>
         <nav>
-            <h1>Dhanusha Venkatesh</h1>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button id="theme-toggle">🌙</button>
         </nav>
+        <button id="theme-toggle">🌙</button>
     </header>
-
-    <section id="hero">
+    
+    <section class="hero">
         <div class="hero-content">
-            <h2>Hi, I'm Dhanusha</h2>
-            <p>Web Developer | AI Enthusiast | ML Researcher</p>
-            <a href="#projects" class="cta-button">View My Work</a>
+            <h1>Hi, I'm <span>Dhanusha</span></h1>
+            <p>Web Developer | Machine Learning Enthusiast</p>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
-
-    <section id="about">
+    
+    <section id="about" class="about">
         <h2>About Me</h2>
-        <p>I'm a passionate B.Tech student specializing in software development, particularly in web applications using Python and Django. I have experience in Machine Learning, AI, and database management.</p>
+        <p>I am a passionate developer skilled in web development and machine learning. Currently working on a Flood Detection System using SVM, PCA, and Decision Tree models with up to 91% accuracy.</p>
     </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Budget Management System</h3>
-            <p>Developed a full-stack budget management system using Django, SQLite, and HTML/CSS.</p>
-        </div>
+    
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
         <div class="project-card">
             <h3>Flood Detection System</h3>
-            <p>Implemented SVM, PCA, and Decision Tree for flood prediction with accuracy of 91%, 90%, and 87%.</p>
+            <p>Implemented using SVM, PCA, and Decision Tree with 91% accuracy.</p>
         </div>
         <div class="project-card">
-            <h3>Generative AI Research</h3>
-            <p>Exploring and implementing AI-driven solutions for real-world applications.</p>
+            <h3>Budget Management System</h3>
+            <p>Developed a web application using Django for tracking expenses.</p>
         </div>
     </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python, Java, C++</li>
-            <li>Web Development: Django, HTML, CSS</li>
-            <li>Machine Learning: SVM, PCA, Decision Tree</li>
-            <li>Database Management: SQLite, SQL</li>
-        </ul>
-    </section>
-
-    <section id="contact">
+    
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <p>Let's connect! Find me on:</p>
-        <a href="https://linkedin.com/in/dhanusha-venkatesh" target="_blank">LinkedIn</a>
-        <a href="https://github.com/dhanushavenkatesh" target="_blank">GitHub</a>
-        <p>Email: dhanushavenkatesh20@gmail.com</p>
+        <p>Email: dhanusha@example.com</p>
     </section>
-
-    <script>
-        document.getElementById('theme-toggle').addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
 </body>
 </html>
-
-     
-
