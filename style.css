@@ -1,68 +1,88 @@
-/* Importing Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* style.css */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+:root {
+    --primary-color: #4CAF50;
+    --background-light: #f4f4f4;
+    --background-dark: #121212;
+    --text-light: #333;
+    --text-dark: #fff;
 }
 
 body {
-    background: linear-gradient(135deg, #1f4037, #99f2c8);
-    color: white;
-    text-align: center;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: var(--background-light);
+    color: var(--text-light);
+    transition: all 0.3s ease-in-out;
 }
 
-header h1 {
-    font-size: 2.5em;
-    font-weight: 600;
-    margin-bottom: 10px;
+.dark-mode body {
+    background: var(--background-dark);
+    color: var(--text-dark);
 }
 
-p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--primary-color);
+    color: #fff;
 }
 
-section {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 80%;
-    backdrop-filter: blur(10px);
-}
-
-h2 {
-    color: #ffde59;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-ul {
+nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
 }
 
-ul li {
-    font-size: 1.2em;
-    margin: 10px 0;
+nav ul li {
+    margin: 0 10px;
 }
 
-/* Adding animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
-section {
-    animation: fadeIn 1s ease-in-out;
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
 }
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.project-card {
+    background: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+  
+ 
